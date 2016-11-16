@@ -1,16 +1,16 @@
-<form method='post'>
+<form method='post' action='<%= formularios_formularios_path %>'>
 <div class="form-group">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <label for="exampleInputname">Name</label>
-  <%= text_field_tag :name, '', class: 'form-control', id: 'exampleInputname', placeholder: 'name' %>
+    <%= text_field_tag :name, '', class: 'form-control', id: 'exampleInputname', placeholder: 'name' %>
   <div class="form-group">
     <label for="exampleInputAge">Age</label>
-    <input type="Age" name='age' class="form-control" id="exampleInputAge" placeholder="Age">
+    <%= text_field_tag :age, '', class: 'form-control', id: 'exampleInputage', placeholder: 'age' %>
   </div>
   </div>
     <div class="form-group">
     <label for="exampleInputAdreess">Address</label>
-    <input type="Adress" name='address' class="form-control" id="exampleInputAdress" placeholder="Adress">
+    <%= text_field_tag :address, '', class: 'form-control', id: 'exampleInputaddress', placeholder: 'address' %>
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
