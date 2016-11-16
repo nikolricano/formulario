@@ -1,15 +1,18 @@
-<form>
-  <div class="form-group">
-    <label for="exampleInputname">Name</label>
-    <input type="name" class="form-control" id="exampleInputName" placeholder="name">
+<form method='post'>
+<div class="form-group">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="hidden" name='authenticity_token' id="authenticity_token" value='<%= form_authenticity_token %>' >
+  <label for="exampleInputname">Name</label>
+  <input type="name" name='name' class="form-control" id="exampleInputName" placeholder="name">
   <div class="form-group">
     <label for="exampleInputAge">Age</label>
-    <input type="Age" class="form-control" id="exampleInputAge" placeholder="Age">
+    <input type="Age" name='age' class="form-control" id="exampleInputAge" placeholder="Age">
   </div>
   </div>
     <div class="form-group">
     <label for="exampleInputAdreess">Address</label>
-    <input type="Adress" class="form-control" id="exampleInputAdress" placeholder="Adress">
+    <input type="Adress" name='address' class="form-control" id="exampleInputAdress" placeholder="Adress">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
+<%= params %>
