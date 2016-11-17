@@ -5,8 +5,12 @@ class FormulariosController < ApplicationController
   end
 
   def formularios_post
-    @user = User.create(name: params[:user][:name], age: params[:user][:age], address: params[:user][:address])
-    redirect_to formularios_formularios_path, alert: 'No pude guardar me falta algo'
+    if params[:user][:name] == '' || params[:user][:age] == '' || params[:user][:address] == ''
+      redirect_to formularios_formularios_path, alert: 'No pude guardar me falta algo'
+    else
+      @user = User.create(name: params[:user][:name], age: params[:user][:age], address: params[:user][:address])
+      redirect_to formularios_formularios_path, alert: 'Bien guardado'
+    end
   end
 
 end
