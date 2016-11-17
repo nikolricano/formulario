@@ -6,7 +6,7 @@ class FormulariosController < ApplicationController
 
   def formularios_post
     @user = User.create(name: params[:user][:name], age: params[:user][:age], address: params[:user][:address])
-    redirect_to formularios_formularios_path
+    redirect_to formularios_formularios_path, alert: 'No pude guardar me falta algo'
   end
 
 end

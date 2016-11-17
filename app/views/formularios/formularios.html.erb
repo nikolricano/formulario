@@ -1,3 +1,4 @@
+<%= flash[:alert] %>
 <%= form_for(@uno, url: formularios_formularios_post_path, method: "post") do |f| %>
   <label for='name'>Name</label>
   <%= f.text_field :name, id: 'name' %>
