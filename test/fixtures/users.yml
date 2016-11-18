@@ -1,11 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  age: 1
-  address: MyString
+  campo1: MyString
+  campo2: MyString
+  campo3: MyString
+  campo4: MyString
+  campo5: MyString
+  campo6: MyString
+  campo7: MyString
+  campo8: MyString
+  campo9: MyString
 
 two:
-  name: MyString
-  age: 1
-  address: MyString
+  campo1: MyString
+  campo2: MyString
+  campo3: MyString
+  campo4: MyString
+  campo5: MyString
+  campo6: MyString
+  campo7: MyString
+  campo8: MyString
+  campo9: MyString

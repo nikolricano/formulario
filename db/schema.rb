@@ -11,12 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161117010705) do
+ActiveRecord::Schema.define(version: 20161118035952) do
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "age"
-    t.string   "address"
+    t.string   "campo1"
+    t.string   "campo2"
+    t.string   "campo3"
+    t.string   "campo4"
+    t.string   "campo5"
+    t.string   "campo6"
+    t.string   "campo7"
+    t.string   "campo8"
+    t.string   "campo9"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
