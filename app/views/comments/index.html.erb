@@ -1,2 +1,13 @@
-<h1>Comments#index</h1>
-<p>Find me in app/views/comments/index.html.erb</p>
+<h1>Listado de Comentarios del Post de titulo <%= @post.title %></h1>
+<table>
+  <thead>
+    <th>Contenido<th>
+  </thead>
+  <tbody>
+<% @comments.each do |comment| %>
+  <tr>
+    <td><%= comment.content %></td>
+  </tr>
+<% end %>
+  </tbody>
+</table>
