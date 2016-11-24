@@ -1,0 +1,1 @@
+json.partial! "post_1s/post_1", post_1: @post_1

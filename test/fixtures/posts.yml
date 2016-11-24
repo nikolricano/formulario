@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyText
+  age: 1
+  agree: false
+
+two:
+  title: MyString
+  content: MyText
+  age: 1
+  agree: false

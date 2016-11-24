@@ -1,0 +1,1 @@
+json.array! @post_1s, partial: 'post_1s/post_1', as: :post_1

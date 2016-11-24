@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Post 1s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Age</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @post_1s.each do |post_1| %>
+      <tr>
+        <td><%= post_1.title %></td>
+        <td><%= post_1.content %></td>
+        <td><%= post_1.age %></td>
+        <td><%= link_to 'Show', post_1 %></td>
+        <td><%= link_to 'Edit', edit_post_1_path(post_1) %></td>
+        <td><%= link_to 'Destroy', post_1, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post 1', new_post_1_path %>
