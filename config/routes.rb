@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :comments, only: [:index]
   end
 
+  get 'posts/new/:variable_x/:variable_y', controller: 'posts', action: 'new'
+
   root 'formularios#formularios'
   post 'formularios/formularios'
   get  'formularios/formularios'
